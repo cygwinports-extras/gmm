@@ -1,0 +1,118 @@
+gmm
+------------------------------------------
+Gmm++ is a generic C++ template library for sparse, dense and skyline 
+matrices. It is built as a set of generic algorithms (mult, add, copy, 
+sub-matrices, dense and sparse solvers ...) for any interfaced vector 
+type or matrix type. It can be view as a glue library allowing 
+cooperation between several vector and matrix types. However, basic 
+sparse, dense and skyline matrix/vector types are built in Gmm++, hence 
+it can be used as a standalone linear algebra library. Interfacing a 
+vector or matrix type means writing 'traits' objects called 
+'linalg_traits', which describe their properties. The library offers 
+predefined dense, sparse and skyline matrix types.
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://home.gna.org/getfem/gmm_intro.html
+
+Canonical download:
+  http://download.gna.org/getfem/stable/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gmm-3.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gmm-3.0-X.cygport all
+
+This will create:
+  /usr/src/gmm-3.0-X-src.tar.bz2
+  /usr/src/gmm-3.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/include/gmm/gmm.h
+  /usr/include/gmm/gmm_MUMPS_interface.h
+  /usr/include/gmm/gmm_algobase.h
+  /usr/include/gmm/gmm_blas.h
+  /usr/include/gmm/gmm_blas_interface.h
+  /usr/include/gmm/gmm_condition_number.h
+  /usr/include/gmm/gmm_conjugated.h
+  /usr/include/gmm/gmm_def.h
+  /usr/include/gmm/gmm_dense_Householder.h
+  /usr/include/gmm/gmm_dense_lu.h
+  /usr/include/gmm/gmm_dense_qr.h
+  /usr/include/gmm/gmm_dense_sylvester.h
+  /usr/include/gmm/gmm_domain_decomp.h
+  /usr/include/gmm/gmm_except.h
+  /usr/include/gmm/gmm_inoutput.h
+  /usr/include/gmm/gmm_interface.h
+  /usr/include/gmm/gmm_interface_bgeot.h
+  /usr/include/gmm/gmm_iter.h
+  /usr/include/gmm/gmm_iter_solvers.h
+  /usr/include/gmm/gmm_kernel.h
+  /usr/include/gmm/gmm_lapack_interface.h
+  /usr/include/gmm/gmm_least_squares_cg.h
+  /usr/include/gmm/gmm_matrix.h
+  /usr/include/gmm/gmm_modified_gram_schmidt.h
+  /usr/include/gmm/gmm_opt.h
+  /usr/include/gmm/gmm_precond.h
+  /usr/include/gmm/gmm_precond_diagonal.h
+  /usr/include/gmm/gmm_precond_ildlt.h
+  /usr/include/gmm/gmm_precond_ildltt.h
+  /usr/include/gmm/gmm_precond_ilu.h
+  /usr/include/gmm/gmm_precond_ilut.h
+  /usr/include/gmm/gmm_precond_ilutp.h
+  /usr/include/gmm/gmm_precond_mr_approx_inverse.h
+  /usr/include/gmm/gmm_real_part.h
+  /usr/include/gmm/gmm_ref.h
+  /usr/include/gmm/gmm_scaled.h
+  /usr/include/gmm/gmm_solver_Newton.h
+  /usr/include/gmm/gmm_solver_Schwarz_additive.h
+  /usr/include/gmm/gmm_solver_bfgs.h
+  /usr/include/gmm/gmm_solver_bicgstab.h
+  /usr/include/gmm/gmm_solver_cg.h
+  /usr/include/gmm/gmm_solver_constrained_cg.h
+  /usr/include/gmm/gmm_solver_gmres.h
+  /usr/include/gmm/gmm_solver_idgmres.h
+  /usr/include/gmm/gmm_solver_qmr.h
+  /usr/include/gmm/gmm_std.h
+  /usr/include/gmm/gmm_sub_index.h
+  /usr/include/gmm/gmm_sub_matrix.h
+  /usr/include/gmm/gmm_sub_vector.h
+  /usr/include/gmm/gmm_superlu_interface.h
+  /usr/include/gmm/gmm_transposed.h
+  /usr/include/gmm/gmm_tri_solve.h
+  /usr/include/gmm/gmm_vector.h
+  /usr/include/gmm/gmm_vector_to_matrix.h
+  /usr/share/doc/Cygwin/gmm-3.0.README
+  /usr/share/doc/gmm-3.0/AUTHORS
+  /usr/share/doc/gmm-3.0/COPYING
+  /usr/share/doc/gmm-3.0/INSTALL
+  /usr/share/doc/gmm-3.0/README
+
+------------------
+
+Port Notes:
+
+----- version 3.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

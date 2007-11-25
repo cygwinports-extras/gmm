@@ -1,0 +1,3 @@
+DESCRIPTION="C++ matrix computation template library"
+HOMEPAGE="http://home.gna.org/getfem/gmm_intro.html"
+SRC_URI="http://download.gna.org/getfem/stable/${P}.tar.gz"
