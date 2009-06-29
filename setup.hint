@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin gcc-g++
+requires: gcc-g++
 sdesc: "C++ matrix computation template library"
 ldesc: "Gmm++ is a generic C++ template library for sparse, dense and skyline
 matrices. It is built as a set of generic algorithms (mult, add, copy,
